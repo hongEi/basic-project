@@ -1,0 +1,12 @@
+# Node.js
+node_modules/
+*.log
+dist/
+.env
+
+# Next.js
+basic-client/.next/
+basic-client/out/
+
+# Nest.js
+basic-server/dist/
