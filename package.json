@@ -1,0 +1,25 @@
+{
+  "name": "basic-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+	"start:client": "cd basic-client && npm run dev",
+    "start:server": "cd basic-server && npm run start:dev",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongEi/basic-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hongEi/basic-project/issues"
+  },
+  "homepage": "https://github.com/hongEi/basic-project#readme",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
