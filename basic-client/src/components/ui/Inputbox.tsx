@@ -6,7 +6,13 @@ interface InputboxProps {
   placeholder: string;
 }
 
-export default function Inputbox({ label, type, value, onChange, placeholder }: InputboxProps) {
+export default function Inputbox({
+  label,
+  type,
+  value,
+  onChange,
+  placeholder,
+}: InputboxProps) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       <label style={{ marginBottom: '5px' }}>{label}: </label>

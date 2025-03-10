@@ -1,5 +1,5 @@
-import Inputbox from "@/components/ui/Inputbox";
-import Button from "@/components/ui/Button";
+import Inputbox from '@/components/ui/Inputbox';
+import Button from '@/components/ui/Button';
 
 interface LoginFormProps {
   id: string;
@@ -19,7 +19,7 @@ export default function LoginForm({
   return (
     <form
       onSubmit={onSubmit}
-      style={{ display: "flex", flexDirection: "column", gap: "15px" }}
+      style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}
     >
       <Inputbox
         label="ID"

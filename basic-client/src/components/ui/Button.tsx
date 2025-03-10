@@ -8,7 +8,7 @@ export default function Button() {
         backgroundColor: '#0070f3',
         color: 'white',
         border: 'none',
-        cursor: 'pointer'
+        cursor: 'pointer',
       }}
     >
       Login
