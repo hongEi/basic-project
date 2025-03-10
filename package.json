@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-	"start:client": "cd basic-client && npm run dev",
+    "start:client": "cd basic-client && npm run dev",
     "start:server": "cd basic-server && npm run start:dev",
     "start": "concurrently \"npm run start:server\" \"npm run start:client\""
   },
@@ -20,6 +20,13 @@
   "homepage": "https://github.com/hongEi/basic-project#readme",
   "description": "",
   "devDependencies": {
-    "concurrently": "^9.1.2"
+    "concurrently": "^9.1.2",
+    "prettier": "^3.5.3"
+  },
+  "dependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }
