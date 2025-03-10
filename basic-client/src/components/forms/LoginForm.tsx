@@ -1,5 +1,5 @@
-import InputField from "@/components/ui/Inputbox";
-import SubmitButton from "@/components/ui/Button";
+import Inputbox from "@/components/ui/Inputbox";
+import Button from "@/components/ui/Button";
 
 interface LoginFormProps {
   id: string;
@@ -21,21 +21,21 @@ export default function LoginForm({
       onSubmit={onSubmit}
       style={{ display: "flex", flexDirection: "column", gap: "15px" }}
     >
-      <InputField
+      <Inputbox
         label="ID"
         type="text"
         value={id}
         onChange={onIdChange}
         placeholder="Enter ID"
       />
-      <InputField
+      <Inputbox
         label="Password"
         type="password"
         value={pw}
         onChange={onPwChange}
         placeholder="Enter Password"
       />
-      <SubmitButton />
+      <Button />
     </form>
   );
 }

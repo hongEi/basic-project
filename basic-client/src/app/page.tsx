@@ -13,13 +13,14 @@ export default function LoginPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("/api/login", {
+      const res = await fetch("/api/login", { //프록시(next.config.ts 설정)를 통해 http://localhost:3001/login 으로 POST 요청.
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id, pw }),
       });
       const data = await res.text();
-      setResponse(data);
+      console.log(data);
+      res.status === 200 || res.status === 201 ? setResponse(data) : setResponse(JSON.stringify({"message":"Login failed"}));
     } catch (err) {
       console.error("Error:", err);
       setResponse("Login failed");

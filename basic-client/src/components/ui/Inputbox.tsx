@@ -1,5 +1,3 @@
-import React from 'react'; // React 임포트 추가
-
 interface InputboxProps {
   label: string;
   type: string;

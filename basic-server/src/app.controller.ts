@@ -1,5 +1,6 @@
 import { Controller, Get, Post, Body } from '@nestjs/common';
 import { AppService } from './app.service';
+import { LoginDto } from './dto/login.dto';
 
 @Controller()
 export class AppController {
@@ -16,7 +17,7 @@ export class AppController {
   }
 
   @Post('/login')
-  login(@Body() body: { id: string; pw: string }): { message: string } {
+  login(@Body() body: LoginDto): { message: string } {
     console.log('Login attempt:', { id: body.id, pw: body.pw });
     if (body.id === 'admin' && body.pw === '1234') {
       return { message: 'Login successful' };
